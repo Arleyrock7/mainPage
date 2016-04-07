@@ -1,0 +1,367 @@
+//VARIABLES COLORES
+
+$azulOscuro: #1e6ebe
+$azulClaro: #67b6f4
+$blanco: #ffffff
+$blancoNav: #f1f1f2
+$negro: #000000
+
+//VARIABLES FONTS
+@import url(https://fonts.googleapis.com/css?family=Roboto:300)
+@import url(https://fonts.googleapis.com/css?family=Oswald)
+
+$font2: Oswald
+
+
+
+html
+	overflow-y: scroll
+	overflow-x: hidden
+body
+	font-family: Roboto
+	.upSection
+		#upBackground
+			background-color: $azulOscuro
+			ul
+				margin-left: -55px
+				list-style: none
+				display: -webkit-inline-box
+				li
+					padding-right: 20px
+					padding-top: 30px
+					padding-bottom: 20px
+					color: $blanco
+	nav
+		background-color: $blancoNav
+		border-color: $blancoNav
+		width: 100%
+		.container-fluid
+			height: auto
+		img
+			height: 50px
+			margin-top: -5px
+		ul
+			list-style: none
+			li
+				a
+					margin-top: 15px
+					margin-bottom: 5px
+					font-family: $font2
+					padding-right: 20px
+					color: $negro
+					&:hover
+						color: $azulClaro
+						text-decoration: none
+	#carousel-example-generic
+	.carousel
+		margin-top: -20px
+		
+	.optionSection
+		#optionBackground
+			background-color: $azulOscuro
+
+			#negrillaText
+				padding-top: 50px
+				padding-bottom: 40px
+				color: $blanco
+			p
+				padding-top: 50px
+				padding-bottom: 40px
+				float: left
+			#unidades1
+				margin-top: 0px
+				a
+					color: $blanco
+					&:hover
+						color: $azulClaro
+			#unidades2
+				margin-top: 0px
+				a
+					color: $blanco
+					margin-left: 25px
+					&:hover
+						color: $azulClaro
+			#unidades3
+				margin-top: 0px
+				margin-left: 0px
+				a
+					color: $blanco
+					&:hover
+						color: $azulClaro
+
+	.principalSection
+		#principalBackground
+			background-color: $blancoNav
+			padding-top: 100px
+			padding-bottom: 100px
+			h3
+				padding-top: 40px
+				color: $azulClaro
+			img
+				padding-top: 150px
+				padding-bottom: 150px
+				padding-left: 20px
+				padding-right: 20px
+			.btn-lg
+				width: 100%
+				margin-top: 100px
+				background-color: $azulOscuro
+				padding: 20px
+				color: $blanco
+				font-family: $font2
+				&:hover
+					background-color: $azulClaro
+					border-color: $azulClaro
+					color: $blancoNav
+				strong
+					font-size: 15px
+	.reelSection
+		#reelBackground
+			padding-top: 100px
+			padding-bottom: 100px
+			h2
+				padding-bottom: 80px
+				font-family: $font2
+		#reelBtnBackground
+			padding-top: 50px
+			padding-bottom: 50px
+			background-color: $azulClaro
+			.btn-lg
+				width: 100%
+				background-color: $blancoNav
+				padding: 20px
+				color: $azulClaro
+				font-family: $font2
+				&:hover
+					background-color: $azulOscuro
+					border-color: $azulOscuro
+					color: $blancoNav
+				strong
+					font-size: 15px
+	.trustSection
+		#trustBackground
+			background-color: $azulOscuro
+			padding-top: 100px
+			padding-bottom: 100px
+			text-align: center
+			h2
+				font-family: $font2
+				padding-bottom: 80px
+				color: $blancoNav
+	.contactUsSection
+		#contactUsBackground
+			padding-top: 200px
+			padding-bottom: 200px
+			h2
+				color: $azulClaro
+				font-family: $font2
+				span
+					color: $azulOscuro
+			#texto
+				margin-top: 50px 
+			.btn-lg
+				width: 100%
+				margin-top: 0px
+				background-color: $azulOscuro
+				padding: 20px
+				color: $blanco
+				font-family: $font2
+				&:hover
+					background-color: $azulClaro
+					border-color: $azulClaro
+					color: $blancoNav
+				strong
+					font-size: 15px
+			.form-control
+				height: 55px
+				background-color: rgba(183, 183, 183, 0.26)
+
+	footer
+		background-color: rgba(0, 0, 0, 0.74)
+		padding-bottom: 80px
+		#footerBackground
+			#footerBackgroundNavBlack
+				background-color: $negro
+				height: 70px
+				margin-bottom: 80px
+		#textoFooter
+			color: $blanco
+
+
+@media (min-width: 769px) and (max-width: 991px)
+	html
+		overflow-y: scroll
+		overflow-x: hidden
+	body
+		font-family: Roboto
+		.upSection
+			#upBackground
+				height: 80px
+				ul
+					float: right
+					margin-right: -20px
+		.optionSection
+			#optionBackground
+				p
+					float: left
+				#unidades1
+					margin-top: -70px
+				#unidades2
+					margin-top: -70px
+					margin-left: -50px
+				#unidades3
+					margin-top: -70px
+					margin-left: -100px
+		.reelSection
+			#reelBackground
+				iframe
+					height: 450px
+		.principalSection 
+			#principalBackground
+				padding-top: 80px
+				h3
+					margin-top: -20px
+				#image
+					margin-top: -50px
+					margin-bottom: -50px
+		.trustSection
+			#trustBackground
+				img
+					padding: 20px
+		.contactUsSection
+			#contactUsBackground
+				padding-bottom: 100px
+				h2
+					margin-top: -100px
+				#texto
+					margin-top: 25px
+					margin-bottom: 25px
+				.btn-lg
+					margin-top: 25px
+
+@media (min-width: 401px) and (max-width: 768px)
+	html
+		overflow-y: scroll
+		overflow-x: hidden
+	body
+		font-family: Roboto
+		.upSection
+			#upBackground
+				height: 80px
+				ul
+					float: right
+					margin-right: -20px
+		nav
+			img
+				height: 40px
+				margin-top: -7px
+		.optionSection
+			#optionBackground
+				p
+					float: left
+				#unidades1
+					margin-top: -50px
+				#unidades2
+					margin-left: -25px
+					margin-top: -50px
+				#unidades3
+					margin-top: -50px
+		.reelSection
+			#reelBackground
+				iframe
+					height: 400px
+		.principalSection 
+			#principalBackground
+				padding-top: 80px
+				h3
+					margin-top: -20px
+				#image
+					margin-top: -50px
+					margin-bottom: -50px
+		.trustSection
+			#trustBackground
+				img
+					padding: 20px
+		.contactUsSection
+			#contactUsBackground
+				padding-top: 200px
+				padding-bottom: 100px
+				h2
+					margin-top: -100px
+				#texto
+					margin-top: 25px
+					margin-bottom: 25px
+				.btn-lg
+					margin-top: 25px	
+
+//MOTO X 2 Gen
+@media (min-width: 297px) and (max-width: 400px)
+	html
+		overflow-y: scroll
+		overflow-x: hidden
+	body
+		font-family: Roboto
+		.upSection
+			#upBackground
+				height: 80px
+				ul
+					float: right
+					margin-left: 20px
+					margin-top: 20px
+					li
+						display: table-footer-group
+
+		nav
+			img
+				height: 40px
+				margin-top: -7px
+		.optionSection
+			#optionBackground
+				p
+					float: left
+				#unidades1
+					margin-top: -50px
+				#unidades2
+					margin-left: -25px
+					margin-top: -50px
+				#unidades3
+					margin-top: -50px
+		.reelSection
+			#reelBackground
+				iframe
+					height: 300px
+		.principalSection 
+			#principalBackground
+				padding-top: 80px
+				h3
+					margin-top: -20px
+				#image
+					margin-top: -50px
+					margin-bottom: -50px
+		.trustSection
+			#trustBackground
+				h2
+					p
+						margin-top: -20px
+						margin-bottom: -70px
+				img
+					padding: 20px
+		.contactUsSection
+			#contactUsBackground
+				padding-top: 200px
+				padding-bottom: 100px
+				h2
+					margin-top: -100px
+				#texto
+					margin-top: 25px
+					margin-bottom: 25px
+				.btn-lg
+					margin-top: 25px			
+
+		
+				
+
+					
+
+
+					

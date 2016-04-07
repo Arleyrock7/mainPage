@@ -1,0 +1,303 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+html {
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+body {
+  font-family: Roboto; }
+  body .upSection #upBackground {
+    background-color: #1e6ebe; }
+    body .upSection #upBackground ul {
+      margin-left: -55px;
+      list-style: none;
+      display: -webkit-inline-box; }
+      body .upSection #upBackground ul li {
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        color: #ffffff; }
+  body nav {
+    background-color: #f1f1f2;
+    border-color: #f1f1f2;
+    width: 100%; }
+    body nav .container-fluid {
+      height: auto; }
+    body nav img {
+      height: 50px;
+      margin-top: -5px; }
+    body nav ul {
+      list-style: none; }
+      body nav ul li a {
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-family: Oswald;
+        padding-right: 20px;
+        color: #000000; }
+        body nav ul li a:hover {
+          color: #67b6f4;
+          text-decoration: none; }
+  body .carousel {
+    margin-top: -20px; }
+  body .optionSection #optionBackground {
+    background-color: #1e6ebe; }
+    body .optionSection #optionBackground #negrillaText {
+      padding-top: 50px;
+      padding-bottom: 40px;
+      color: #ffffff; }
+    body .optionSection #optionBackground p {
+      padding-top: 50px;
+      padding-bottom: 40px;
+      float: left; }
+    body .optionSection #optionBackground #unidades1 {
+      margin-top: 0px; }
+      body .optionSection #optionBackground #unidades1 a {
+        color: #ffffff; }
+        body .optionSection #optionBackground #unidades1 a:hover {
+          color: #67b6f4; }
+    body .optionSection #optionBackground #unidades2 {
+      margin-top: 0px; }
+      body .optionSection #optionBackground #unidades2 a {
+        color: #ffffff;
+        margin-left: 25px; }
+        body .optionSection #optionBackground #unidades2 a:hover {
+          color: #67b6f4; }
+    body .optionSection #optionBackground #unidades3 {
+      margin-top: 0px;
+      margin-left: 0px; }
+      body .optionSection #optionBackground #unidades3 a {
+        color: #ffffff; }
+        body .optionSection #optionBackground #unidades3 a:hover {
+          color: #67b6f4; }
+  body .principalSection #principalBackground {
+    background-color: #f1f1f2;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    body .principalSection #principalBackground h3 {
+      padding-top: 40px;
+      color: #67b6f4; }
+    body .principalSection #principalBackground img {
+      padding-top: 150px;
+      padding-bottom: 150px;
+      padding-left: 20px;
+      padding-right: 20px; }
+    body .principalSection #principalBackground .btn-lg {
+      width: 100%;
+      margin-top: 100px;
+      background-color: #1e6ebe;
+      padding: 20px;
+      color: #ffffff;
+      font-family: Oswald; }
+      body .principalSection #principalBackground .btn-lg:hover {
+        background-color: #67b6f4;
+        border-color: #67b6f4;
+        color: #f1f1f2; }
+      body .principalSection #principalBackground .btn-lg strong {
+        font-size: 15px; }
+  body .reelSection #reelBackground {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    body .reelSection #reelBackground h2 {
+      padding-bottom: 80px;
+      font-family: Oswald; }
+  body .reelSection #reelBtnBackground {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #67b6f4; }
+    body .reelSection #reelBtnBackground .btn-lg {
+      width: 100%;
+      background-color: #f1f1f2;
+      padding: 20px;
+      color: #67b6f4;
+      font-family: Oswald; }
+      body .reelSection #reelBtnBackground .btn-lg:hover {
+        background-color: #1e6ebe;
+        border-color: #1e6ebe;
+        color: #f1f1f2; }
+      body .reelSection #reelBtnBackground .btn-lg strong {
+        font-size: 15px; }
+  body .trustSection #trustBackground {
+    background-color: #1e6ebe;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center; }
+    body .trustSection #trustBackground h2 {
+      font-family: Oswald;
+      padding-bottom: 80px;
+      color: #f1f1f2; }
+  body .contactUsSection #contactUsBackground {
+    padding-top: 200px;
+    padding-bottom: 200px; }
+    body .contactUsSection #contactUsBackground h2 {
+      color: #67b6f4;
+      font-family: Oswald; }
+      body .contactUsSection #contactUsBackground h2 span {
+        color: #1e6ebe; }
+    body .contactUsSection #contactUsBackground #texto {
+      margin-top: 50px; }
+    body .contactUsSection #contactUsBackground .btn-lg {
+      width: 100%;
+      margin-top: 0px;
+      background-color: #1e6ebe;
+      padding: 20px;
+      color: #ffffff;
+      font-family: Oswald; }
+      body .contactUsSection #contactUsBackground .btn-lg:hover {
+        background-color: #67b6f4;
+        border-color: #67b6f4;
+        color: #f1f1f2; }
+      body .contactUsSection #contactUsBackground .btn-lg strong {
+        font-size: 15px; }
+    body .contactUsSection #contactUsBackground .form-control {
+      height: 55px;
+      background-color: rgba(183, 183, 183, 0.26); }
+  body footer {
+    background-color: rgba(0, 0, 0, 0.74);
+    padding-bottom: 80px; }
+    body footer #footerBackground #footerBackgroundNavBlack {
+      background-color: #000000;
+      height: 70px;
+      margin-bottom: 80px; }
+    body footer #textoFooter {
+      color: #ffffff; }
+
+@media (min-width: 769px) and (max-width: 991px) {
+  html {
+    overflow-y: scroll;
+    overflow-x: hidden; }
+
+  body {
+    font-family: Roboto; }
+    body .upSection #upBackground {
+      height: 80px; }
+      body .upSection #upBackground ul {
+        float: right;
+        margin-right: -20px; }
+    body .optionSection #optionBackground p {
+      float: left; }
+    body .optionSection #optionBackground #unidades1 {
+      margin-top: -70px; }
+    body .optionSection #optionBackground #unidades2 {
+      margin-top: -70px;
+      margin-left: -50px; }
+    body .optionSection #optionBackground #unidades3 {
+      margin-top: -70px;
+      margin-left: -100px; }
+    body .reelSection #reelBackground iframe {
+      height: 450px; }
+    body .principalSection #principalBackground {
+      padding-top: 80px; }
+      body .principalSection #principalBackground h3 {
+        margin-top: -20px; }
+      body .principalSection #principalBackground #image {
+        margin-top: -50px;
+        margin-bottom: -50px; }
+    body .trustSection #trustBackground img {
+      padding: 20px; }
+    body .contactUsSection #contactUsBackground {
+      padding-bottom: 100px; }
+      body .contactUsSection #contactUsBackground h2 {
+        margin-top: -100px; }
+      body .contactUsSection #contactUsBackground #texto {
+        margin-top: 25px;
+        margin-bottom: 25px; }
+      body .contactUsSection #contactUsBackground .btn-lg {
+        margin-top: 25px; } }
+@media (min-width: 401px) and (max-width: 768px) {
+  html {
+    overflow-y: scroll;
+    overflow-x: hidden; }
+
+  body {
+    font-family: Roboto; }
+    body .upSection #upBackground {
+      height: 80px; }
+      body .upSection #upBackground ul {
+        float: right;
+        margin-right: -20px; }
+    body nav img {
+      height: 40px;
+      margin-top: -7px; }
+    body .optionSection #optionBackground p {
+      float: left; }
+    body .optionSection #optionBackground #unidades1 {
+      margin-top: -50px; }
+    body .optionSection #optionBackground #unidades2 {
+      margin-left: -25px;
+      margin-top: -50px; }
+    body .optionSection #optionBackground #unidades3 {
+      margin-top: -50px; }
+    body .reelSection #reelBackground iframe {
+      height: 400px; }
+    body .principalSection #principalBackground {
+      padding-top: 80px; }
+      body .principalSection #principalBackground h3 {
+        margin-top: -20px; }
+      body .principalSection #principalBackground #image {
+        margin-top: -50px;
+        margin-bottom: -50px; }
+    body .trustSection #trustBackground img {
+      padding: 20px; }
+    body .contactUsSection #contactUsBackground {
+      padding-top: 200px;
+      padding-bottom: 100px; }
+      body .contactUsSection #contactUsBackground h2 {
+        margin-top: -100px; }
+      body .contactUsSection #contactUsBackground #texto {
+        margin-top: 25px;
+        margin-bottom: 25px; }
+      body .contactUsSection #contactUsBackground .btn-lg {
+        margin-top: 25px; } }
+@media (min-width: 297px) and (max-width: 400px) {
+  html {
+    overflow-y: scroll;
+    overflow-x: hidden; }
+
+  body {
+    font-family: Roboto; }
+    body .upSection #upBackground {
+      height: 80px; }
+      body .upSection #upBackground ul {
+        float: right;
+        margin-left: 20px;
+        margin-top: 20px; }
+        body .upSection #upBackground ul li {
+          display: table-footer-group; }
+    body nav img {
+      height: 40px;
+      margin-top: -7px; }
+    body .optionSection #optionBackground p {
+      float: left; }
+    body .optionSection #optionBackground #unidades1 {
+      margin-top: -50px; }
+    body .optionSection #optionBackground #unidades2 {
+      margin-left: -25px;
+      margin-top: -50px; }
+    body .optionSection #optionBackground #unidades3 {
+      margin-top: -50px; }
+    body .reelSection #reelBackground iframe {
+      height: 300px; }
+    body .principalSection #principalBackground {
+      padding-top: 80px; }
+      body .principalSection #principalBackground h3 {
+        margin-top: -20px; }
+      body .principalSection #principalBackground #image {
+        margin-top: -50px;
+        margin-bottom: -50px; }
+    body .trustSection #trustBackground h2 p {
+      margin-top: -20px;
+      margin-bottom: -70px; }
+    body .trustSection #trustBackground img {
+      padding: 20px; }
+    body .contactUsSection #contactUsBackground {
+      padding-top: 200px;
+      padding-bottom: 100px; }
+      body .contactUsSection #contactUsBackground h2 {
+        margin-top: -100px; }
+      body .contactUsSection #contactUsBackground #texto {
+        margin-top: 25px;
+        margin-bottom: 25px; }
+      body .contactUsSection #contactUsBackground .btn-lg {
+        margin-top: 25px; } }
+
+/*# sourceMappingURL=mainStyles.min.css.map */
