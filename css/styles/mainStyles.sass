@@ -5,6 +5,7 @@ $azulClaro: #67b6f4
 $blanco: #ffffff
 $blancoNav: #f1f1f2
 $negro: #000000
+$gris: #9d9d9d
 
 //VARIABLES FONTS
 @import url(https://fonts.googleapis.com/css?family=Roboto:300)
@@ -31,10 +32,15 @@ body
 					padding-top: 30px
 					padding-bottom: 20px
 					color: $blanco
+					a
+						color: $blanco
+						&:hover
+							text-decoration: none
 	nav
 		background-color: $blancoNav
 		border-color: $blancoNav
 		width: 100%
+		z-index: 99
 		.container-fluid
 			height: auto
 		img
@@ -52,42 +58,72 @@ body
 					&:hover
 						color: $azulClaro
 						text-decoration: none
+	//Sticky after 97px height
+	.affix
+		top: 0px
+		opacity: 0.95
+		//border-radius: 0px
 	#carousel-example-generic
+	.carousel-inner
+		height: auto
 	.carousel
 		margin-top: -20px
-		
+		img
+			height: 500px
+		#text_1
+			margin-top: 90px
+			font-size: 10px
+			li
+				list-style: none
+				margin-left: 100px
+				margin-left: -50px
+		#text_2
+			margin-top: -600px
+			font-size: 50px
+			li
+				font-size: 50px
+				list-style: none
+		#text_3
+			margin-top: -460px
+			font-size: 50px
+			margin-left: 300px
+			li
+				font-size: 50px
+				list-style: none
+		#text_5
+			margin-top: -460px
+			font-size: 50px
+			margin-left: 300px
+			li
+				font-size: 50px
+				list-style: none
+
+	#btn
+		z-index: 999
+		position: absolute
+		margin-top: -160px
+		margin-left: 245px
+		padding-left: -700px
+		padding-right: 100px
 	.optionSection
 		#optionBackground
+			margin-top: 0px
 			background-color: $azulOscuro
 
 			#negrillaText
-				padding-top: 50px
-				padding-bottom: 40px
+				padding-top: 37px
+				padding-bottom: 0px
 				color: $blanco
 			p
-				padding-top: 50px
-				padding-bottom: 40px
+				padding-top: 20px
+				padding-bottom: 5px
 				float: left
-			#unidades1
-				margin-top: 0px
-				a
-					color: $blanco
-					&:hover
-						color: $azulClaro
-			#unidades2
-				margin-top: 0px
-				a
-					color: $blanco
-					margin-left: 25px
-					&:hover
-						color: $azulClaro
-			#unidades3
-				margin-top: 0px
-				margin-left: 0px
-				a
-					color: $blanco
-					&:hover
-						color: $azulClaro
+			#u1
+				margin-top: 10px
+			#u2
+				margin-top: 10px
+			#u3
+				margin-top: 10px
 
 	.principalSection
 		#principalBackground
@@ -97,6 +133,8 @@ body
 			h3
 				padding-top: 40px
 				color: $azulClaro
+			#texto
+				color: $gris
 			img
 				padding-top: 150px
 				padding-bottom: 150px
@@ -115,13 +153,60 @@ body
 					color: $blancoNav
 				strong
 					font-size: 15px
+					a
+						color: $blanco
+						text-decoration: none
 	.reelSection
+		PADDING-LEFT: 10%
+		PADDING-RIGHT: 10%
 		#reelBackground
 			padding-top: 100px
 			padding-bottom: 100px
 			h2
 				padding-bottom: 80px
 				font-family: $font2
+			#imagesHover
+				img
+					width: 112%
+					height: 180px
+					
+				#hoverText
+					background-color: $negro
+					width: 100%
+					z-index: 999
+					position: relative
+					height: 50px
+					margin-top: -60px
+					display: none
+					
+
+					
+					h4
+						color: $gris
+						font-weight: 100
+						font-size: 15px
+						padding-top: 10px
+						padding-left: 10px
+						padding-right: 10px
+						padding-bottom: 10px
+						text-align: justify
+				&:hover
+					img
+						background-image: url('../../../images/reel/hoverImages/2.png')
+						width: 112%
+						height: 180px
+						opacity: 0.5
+					#hoverText
+						background-color: $negro
+						opacity: 0.7
+						width: 112%
+						z-index: 999
+						position: relative
+						height: 50px
+						margin-top: -60px
+						display: block
+
+				
 		#reelBtnBackground
 			padding-top: 50px
 			padding-bottom: 50px
@@ -138,6 +223,20 @@ body
 					color: $blancoNav
 				strong
 					font-size: 15px
+			
+		.modal-content
+			width: 100%
+			margin-left: 0px
+			h3
+				color: $azulOscuro
+				background-color: rgba(128, 128, 128, 0.12)
+				padding: 10px
+			h5
+				color: $gris
+				margin-left: 7px
+
+
+			
 	.trustSection
 		#trustBackground
 			background-color: $azulOscuro
@@ -148,6 +247,9 @@ body
 				font-family: $font2
 				padding-bottom: 80px
 				color: $blancoNav
+			#logos
+				img
+					width: 50%
 	.contactUsSection
 		#contactUsBackground
 			padding-top: 200px
@@ -159,6 +261,7 @@ body
 					color: $azulOscuro
 			#texto
 				margin-top: 50px 
+				color: $gris
 			.btn-lg
 				width: 100%
 				margin-top: 0px
@@ -185,8 +288,351 @@ body
 				height: 70px
 				margin-bottom: 80px
 		#textoFooter
-			color: $blanco
+			color: rgba(183, 183, 183, 0.81)
+			padding-bottom: 30px
+			ul
+				li
+					list-style: none
+					margin-left: -40px
+					margin-top: 10px
+					a
+						color: $azulClaro
+						&:hover
+							color: $azulOscuro
+							text-decoration: none
+					&:hover
+						#social
+							background-color: $blanco
+							border-radius: 50px
 
+			#footerLine
+				border-top: 1px solid rgba(183, 183, 183, 0.81)
+
+
+@media (min-width: 1216px) and (max-width: 1438px)
+	html
+	overflow-y: scroll
+	overflow-x: hidden
+	body
+		font-family: Roboto
+		.upSection
+			#upBackground
+				background-color: $azulOscuro
+				ul
+					margin-left: -55px
+					list-style: none
+					display: -webkit-inline-box
+					li
+						padding-right: 20px
+						padding-top: 30px
+						padding-bottom: 20px
+						color: $blanco
+						a
+							color: $blanco
+							&:hover
+								text-decoration: none
+		nav
+			background-color: $blancoNav
+			border-color: $blancoNav
+			width: 100%
+			z-index: 99
+			.container-fluid
+				height: auto
+			img
+				height: 50px
+				margin-top: -5px
+			ul
+				list-style: none
+				li
+					a
+						margin-top: 15px
+						margin-bottom: 5px
+						font-family: $font2
+						padding-right: 20px
+						color: $negro
+						&:hover
+							color: $azulClaro
+							text-decoration: none
+		//Sticky after 97px height
+		.affix
+			top: 0px
+			opacity: 0.95
+			//border-radius: 0px
+		#carousel-example-generic
+		.carousel
+			margin-top: -20px
+			#text_1
+				margin-top: -320px
+				font-size: 50px
+				li
+					list-style: none
+					margin-left: 100px
+					margin-left: -50px
+			#text_2
+				margin-top: -460px
+				font-size: 50px
+				li
+					font-size: 50px
+					list-style: none
+			#text_3
+				margin-top: -380px
+				font-size: 50px
+				margin-left: 300px
+				li
+					font-size: 50px
+					list-style: none
+			#text_5
+				margin-top: -380px
+				font-size: 50px
+				margin-left: 300px
+				li
+					font-size: 50px
+					list-style: none
+		#btn
+			.btn
+				margin-top: 100px
+				z-index: 999
+				position: absolute
+		.reelSection
+			#reelBackground
+			.modal-content
+				width: 100%
+				margin-left: 0px	
+
+
+		.trustSection
+			#trustBackground
+				#logos
+					img
+						width: 50%
+
+@media (min-width: 1077px) and (max-width: 1215px)
+	html
+	overflow-y: scroll
+	overflow-x: hidden
+	body
+		font-family: Roboto
+		.upSection
+			#upBackground
+				background-color: $azulOscuro
+				ul
+					margin-left: -55px
+					list-style: none
+					display: -webkit-inline-box
+					li
+						padding-right: 20px
+						padding-top: 30px
+						padding-bottom: 20px
+						color: $blanco
+						a
+							color: $blanco
+							&:hover
+								text-decoration: none
+		nav
+			background-color: $blancoNav
+			border-color: $blancoNav
+			width: 100%
+			z-index: 99
+			.container-fluid
+				height: auto
+			img
+				height: 50px
+				margin-top: -5px
+			ul
+				list-style: none
+				li
+					a
+						margin-top: 15px
+						margin-bottom: 5px
+						font-family: $font2
+						padding-right: 20px
+						color: $negro
+						&:hover
+							color: $azulClaro
+							text-decoration: none
+		//Sticky after 97px height
+		.affix
+			top: 0px
+			opacity: 0.95
+			//border-radius: 0px
+		#carousel-example-generic
+		.carousel
+			margin-top: -20px
+			#text_1
+				margin-top: -280px
+				font-size: 50px
+				li
+					list-style: none
+					margin-left: 100px
+					margin-left: -50px
+			#text_2
+				margin-top: -400px
+				font-size: 50px
+				li
+					font-size: 50px
+					list-style: none
+			#text_3
+				margin-top: -330px
+				font-size: 50px
+				margin-left: 300px
+				li
+					font-size: 50px
+					list-style: none
+			#text_5
+				margin-top: -320px
+				font-size: 50px
+				margin-left: 300px
+				li
+					font-size: 50px
+					list-style: none
+		.optionSection
+			#optionBackground
+				margin-top: 0px
+				background-color: $azulOscuro
+
+				#negrillaText
+					padding-top: 30px
+					padding-bottom: 0px
+					color: $blanco
+				p
+					padding-top: 15px
+					padding-bottom: 5px
+					float: left
+				#u1
+					margin-top: 10px
+				#u2
+					margin-top: 10px
+				#u3
+					margin-top: 10px
+				#u4
+					margin-top: 5px
+		
+		.reelSection
+			#reelBackground
+			.modal-content
+				width: 100%
+				margin-left: 0px	
+
+		.trustSection
+			#trustBackground
+				#logos
+					img
+						width: 50%
+
+
+@media (min-width: 992px) and (max-width: 1076px)
+	html
+	overflow-y: scroll
+	overflow-x: hidden
+	body
+		font-family: Roboto
+		.upSection
+			#upBackground
+				background-color: $azulOscuro
+				ul
+					margin-left: -55px
+					list-style: none
+					display: -webkit-inline-box
+					li
+						padding-right: 20px
+						padding-top: 30px
+						padding-bottom: 20px
+						color: $blanco
+						a
+							color: $blanco
+							&:hover
+								text-decoration: none
+		nav
+			background-color: $blancoNav
+			border-color: $blancoNav
+			width: 100%
+			z-index: 99
+			.container-fluid
+				height: auto
+			img
+				height: 50px
+				margin-top: -5px
+			ul
+				list-style: none
+				li
+					a
+						margin-top: 15px
+						margin-bottom: 5px
+						font-family: $font2
+						padding-right: 20px
+						color: $negro
+						&:hover
+							color: $azulClaro
+							text-decoration: none
+		//Sticky after 97px height
+		.affix
+			top: 0px
+			opacity: 0.95
+			//border-radius: 0px
+		#carousel-example-generic
+		.carousel
+			margin-top: -20px
+			#text_1
+				margin-top: -240px
+				font-size: 50px
+				li
+					list-style: none
+					margin-left: 100px
+					margin-left: -50px
+			#text_2
+				margin-top: -400px
+				font-size: 50px
+				li
+					font-size: 50px
+					list-style: none
+			#text_3
+				margin-top: -400px
+				font-size: 50px
+				margin-left: 300px
+				li
+					font-size: 50px
+					list-style: none
+			#text_5
+				margin-top: -350px
+				font-size: 50px
+				margin-left: 300px
+				li
+					font-size: 50px
+					list-style: none
+			
+		.optionSection
+			#optionBackground
+				margin-top: 0px
+				background-color: $azulOscuro
+
+				#negrillaText
+					padding-top: 27px
+					padding-bottom: 0px
+					color: $blanco
+				p
+					padding-top: 10px
+					padding-bottom: 5px
+					float: left
+				#u1
+					margin-top: 10px
+				#u2
+					margin-top: 10px
+				#u3
+					margin-top: 10px
+				#u4
+					margin-top: 5px
+
+		.reelSection
+			#reelBackground
+			.modal-content
+				width: 100%
+				margin-left: 0px	
+
+		.trustSection
+			#trustBackground
+				#logos
+					img
+						width: 50%
 
 @media (min-width: 769px) and (max-width: 991px)
 	html
@@ -200,6 +646,84 @@ body
 				ul
 					float: right
 					margin-right: -20px
+		nav
+			background-color: $blancoNav
+			border-color: $blancoNav
+			width: 100%
+			z-index: 99
+			.container-fluid
+				height: auto
+			img
+				height: 50px
+				margin-top: -5px
+			ul
+				list-style: none
+				li
+					a
+						margin-top: 15px
+						margin-bottom: 5px
+						font-family: $font2
+						padding-right: 20px
+						color: $negro
+						&:hover
+							color: $azulClaro
+							text-decoration: none
+		//Sticky after 97px height
+		.affix
+			top: 0px
+			opacity: 0.95
+			//border-radius: 0px
+		#carousel-example-generic
+		.carousel
+			margin-top: -20px
+			#text_1
+				margin-top: -180px
+				li
+					font-size: 30px
+					list-style: none
+					margin-left: 100px
+					margin-left: -50px
+			#text_2
+				margin-top: -260px
+				font-size: 30px
+				li
+					font-size: 30px
+					list-style: none
+			#text_3
+				margin-top: -200px
+				margin-left: 170px
+				li
+					font-size: 30px
+					list-style: none
+			#text_5
+				margin-top: -200px
+				margin-left: 120px
+				li
+					font-size: 30px
+					list-style: none
+
+		.optionSection
+			#optionBackground
+				margin-top: 0px
+				background-color: $azulOscuro
+
+				#negrillaText
+					padding-top: 27px
+					padding-bottom: 0px
+					color: $blanco
+				p
+					padding-top: 10px
+					padding-bottom: 10px
+					float: left
+				#u1
+					margin-top: 10px
+				#u2
+					margin-top: 10px
+				#u3
+					margin-top: 10px
+				#u4
+					margin-top: -15px
+
 		.optionSection
 			#optionBackground
 				p
@@ -216,6 +740,14 @@ body
 			#reelBackground
 				iframe
 					height: 450px
+		.reelSection
+			#reelBackground
+			.modal-content
+				width: 100%
+				margin-left: 0px	
+		
+
+
 		.principalSection 
 			#principalBackground
 				padding-top: 80px
@@ -224,10 +756,12 @@ body
 				#image
 					margin-top: -50px
 					margin-bottom: -50px
+
 		.trustSection
 			#trustBackground
-				img
-					padding: 20px
+				#logos
+					img
+						width: 50%
 		.contactUsSection
 			#contactUsBackground
 				padding-bottom: 100px
@@ -255,6 +789,66 @@ body
 			img
 				height: 40px
 				margin-top: -7px
+		//Sticky after 97px height
+		.affix
+			top: 0px
+			opacity: 0.95
+			//border-radius: 0px
+		#carousel-example-generic
+		.carousel
+			margin-top: -20px
+			#text_1
+				margin-top: -150px
+				li
+					font-size: 30px
+					list-style: none
+					margin-left: 100px
+					margin-left: -50px
+			#text_2
+				margin-top: -230px
+				font-size: 30px
+				li
+					font-size: 30px
+					list-style: none
+			#text_3
+				margin-top: -170px
+				margin-left: 170px
+				li
+					font-size: 30px
+					list-style: none
+			#text_5
+				margin-top: -170px
+				margin-left: 120px
+				li
+					font-size: 30px
+					list-style: none
+		
+		.optionSection
+			#optionBackground
+				margin-top: 0px
+				background-color: $azulOscuro
+
+				#negrillaText
+					padding-top: 27px
+					padding-bottom: 0px
+					color: $blanco
+				p
+					padding-top: 10px
+					padding-bottom: 10px
+					float: left
+				#u1
+					width: 25%
+					padding: 10px
+				#u2
+					width: 25%
+					padding: 10px
+				#u3
+					width: 25%
+					padding: 10px
+				#u4
+					width: 25%
+					padding: 10px
+
 		.optionSection
 			#optionBackground
 				p
@@ -270,6 +864,13 @@ body
 			#reelBackground
 				iframe
 					height: 400px
+		.reelSection
+			#reelBackground
+			.modal-content
+				width: 100%
+				margin-left: 0px	
+
+
 		.principalSection 
 			#principalBackground
 				padding-top: 80px
@@ -315,6 +916,38 @@ body
 			img
 				height: 40px
 				margin-top: -7px
+		//Sticky after 97px height
+		.affix
+			top: 0px
+			opacity: 0.95
+			//border-radius: 0px
+		#carousel-example-generic
+		.carousel
+			margin-top: -20px
+			#text_1
+				margin-top: -70px
+				li
+					font-size: 20px
+					list-style: none
+					margin-left: -40px
+			#text_2
+				margin-top: -140px
+				font-size: 20px
+				li
+					font-size: 20px
+					list-style: none
+			#text_3
+				margin-top: -70px
+				margin-left: 70px
+				li
+					font-size: 20px
+					list-style: none
+			#text_5
+				margin-top: -90px
+				margin-left: 70px
+				li
+					font-size: 20px
+					list-style: none
 		.optionSection
 			#optionBackground
 				p
@@ -330,6 +963,14 @@ body
 			#reelBackground
 				iframe
 					height: 300px
+		.reelSection
+			#reelBackground
+			.modal-content
+				width: 100%
+				margin-left: 0px	
+
+
+
 		.principalSection 
 			#principalBackground
 				padding-top: 80px

@@ -17,10 +17,15 @@ body {
         padding-top: 30px;
         padding-bottom: 20px;
         color: #ffffff; }
+        body .upSection #upBackground ul li a {
+          color: #ffffff; }
+          body .upSection #upBackground ul li a:hover {
+            text-decoration: none; }
   body nav {
     background-color: #f1f1f2;
     border-color: #f1f1f2;
-    width: 100%; }
+    width: 100%;
+    z-index: 99; }
     body nav .container-fluid {
       height: auto; }
     body nav img {
@@ -37,38 +42,66 @@ body {
         body nav ul li a:hover {
           color: #67b6f4;
           text-decoration: none; }
+  body .affix {
+    top: 0px;
+    opacity: 0.95; }
+  body .carousel-inner {
+    height: auto; }
   body .carousel {
     margin-top: -20px; }
+    body .carousel img {
+      height: 500px; }
+    body .carousel #text_1 {
+      margin-top: 90px;
+      font-size: 10px; }
+      body .carousel #text_1 li {
+        list-style: none;
+        margin-left: 100px;
+        margin-left: -50px; }
+    body .carousel #text_2 {
+      margin-top: -600px;
+      font-size: 50px; }
+      body .carousel #text_2 li {
+        font-size: 50px;
+        list-style: none; }
+    body .carousel #text_3 {
+      margin-top: -460px;
+      font-size: 50px;
+      margin-left: 300px; }
+      body .carousel #text_3 li {
+        font-size: 50px;
+        list-style: none; }
+    body .carousel #text_5 {
+      margin-top: -460px;
+      font-size: 50px;
+      margin-left: 300px; }
+      body .carousel #text_5 li {
+        font-size: 50px;
+        list-style: none; }
+  body #btn {
+    z-index: 999;
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 245px;
+    padding-left: -700px;
+    padding-right: 100px; }
   body .optionSection #optionBackground {
+    margin-top: 0px;
     background-color: #1e6ebe; }
     body .optionSection #optionBackground #negrillaText {
-      padding-top: 50px;
-      padding-bottom: 40px;
+      padding-top: 37px;
+      padding-bottom: 0px;
       color: #ffffff; }
     body .optionSection #optionBackground p {
-      padding-top: 50px;
-      padding-bottom: 40px;
+      padding-top: 20px;
+      padding-bottom: 5px;
       float: left; }
-    body .optionSection #optionBackground #unidades1 {
-      margin-top: 0px; }
-      body .optionSection #optionBackground #unidades1 a {
-        color: #ffffff; }
-        body .optionSection #optionBackground #unidades1 a:hover {
-          color: #67b6f4; }
-    body .optionSection #optionBackground #unidades2 {
-      margin-top: 0px; }
-      body .optionSection #optionBackground #unidades2 a {
-        color: #ffffff;
-        margin-left: 25px; }
-        body .optionSection #optionBackground #unidades2 a:hover {
-          color: #67b6f4; }
-    body .optionSection #optionBackground #unidades3 {
-      margin-top: 0px;
-      margin-left: 0px; }
-      body .optionSection #optionBackground #unidades3 a {
-        color: #ffffff; }
-        body .optionSection #optionBackground #unidades3 a:hover {
-          color: #67b6f4; }
+    body .optionSection #optionBackground #u1 {
+      margin-top: 10px; }
+    body .optionSection #optionBackground #u2 {
+      margin-top: 10px; }
+    body .optionSection #optionBackground #u3 {
+      margin-top: 10px; }
   body .principalSection #principalBackground {
     background-color: #f1f1f2;
     padding-top: 100px;
@@ -76,6 +109,8 @@ body {
     body .principalSection #principalBackground h3 {
       padding-top: 40px;
       color: #67b6f4; }
+    body .principalSection #principalBackground #texto {
+      color: #9d9d9d; }
     body .principalSection #principalBackground img {
       padding-top: 150px;
       padding-bottom: 150px;
@@ -94,28 +129,78 @@ body {
         color: #f1f1f2; }
       body .principalSection #principalBackground .btn-lg strong {
         font-size: 15px; }
-  body .reelSection #reelBackground {
-    padding-top: 100px;
-    padding-bottom: 100px; }
-    body .reelSection #reelBackground h2 {
-      padding-bottom: 80px;
-      font-family: Oswald; }
-  body .reelSection #reelBtnBackground {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #67b6f4; }
-    body .reelSection #reelBtnBackground .btn-lg {
+        body .principalSection #principalBackground .btn-lg strong a {
+          color: #ffffff;
+          text-decoration: none; }
+  body .reelSection {
+    PADDING-LEFT: 10%;
+    PADDING-RIGHT: 10%; }
+    body .reelSection #reelBackground {
+      padding-top: 100px;
+      padding-bottom: 100px; }
+      body .reelSection #reelBackground h2 {
+        padding-bottom: 80px;
+        font-family: Oswald; }
+      body .reelSection #reelBackground #imagesHover img {
+        width: 112%;
+        height: 180px; }
+      body .reelSection #reelBackground #imagesHover #hoverText {
+        background-color: #000000;
+        width: 100%;
+        z-index: 999;
+        position: relative;
+        height: 50px;
+        margin-top: -60px;
+        display: none; }
+        body .reelSection #reelBackground #imagesHover #hoverText h4 {
+          color: #9d9d9d;
+          font-weight: 100;
+          font-size: 15px;
+          padding-top: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-bottom: 10px;
+          text-align: justify; }
+      body .reelSection #reelBackground #imagesHover:hover img {
+        background-image: url("../../../images/reel/hoverImages/2.png");
+        width: 112%;
+        height: 180px;
+        opacity: 0.5; }
+      body .reelSection #reelBackground #imagesHover:hover #hoverText {
+        background-color: #000000;
+        opacity: 0.7;
+        width: 112%;
+        z-index: 999;
+        position: relative;
+        height: 50px;
+        margin-top: -60px;
+        display: block; }
+    body .reelSection #reelBtnBackground {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-color: #67b6f4; }
+      body .reelSection #reelBtnBackground .btn-lg {
+        width: 100%;
+        background-color: #f1f1f2;
+        padding: 20px;
+        color: #67b6f4;
+        font-family: Oswald; }
+        body .reelSection #reelBtnBackground .btn-lg:hover {
+          background-color: #1e6ebe;
+          border-color: #1e6ebe;
+          color: #f1f1f2; }
+        body .reelSection #reelBtnBackground .btn-lg strong {
+          font-size: 15px; }
+    body .reelSection .modal-content {
       width: 100%;
-      background-color: #f1f1f2;
-      padding: 20px;
-      color: #67b6f4;
-      font-family: Oswald; }
-      body .reelSection #reelBtnBackground .btn-lg:hover {
-        background-color: #1e6ebe;
-        border-color: #1e6ebe;
-        color: #f1f1f2; }
-      body .reelSection #reelBtnBackground .btn-lg strong {
-        font-size: 15px; }
+      margin-left: 0px; }
+      body .reelSection .modal-content h3 {
+        color: #1e6ebe;
+        background-color: rgba(128, 128, 128, 0.12);
+        padding: 10px; }
+      body .reelSection .modal-content h5 {
+        color: #9d9d9d;
+        margin-left: 7px; }
   body .trustSection #trustBackground {
     background-color: #1e6ebe;
     padding-top: 100px;
@@ -125,6 +210,8 @@ body {
       font-family: Oswald;
       padding-bottom: 80px;
       color: #f1f1f2; }
+    body .trustSection #trustBackground #logos img {
+      width: 50%; }
   body .contactUsSection #contactUsBackground {
     padding-top: 200px;
     padding-bottom: 200px; }
@@ -134,7 +221,8 @@ body {
       body .contactUsSection #contactUsBackground h2 span {
         color: #1e6ebe; }
     body .contactUsSection #contactUsBackground #texto {
-      margin-top: 50px; }
+      margin-top: 50px;
+      color: #9d9d9d; }
     body .contactUsSection #contactUsBackground .btn-lg {
       width: 100%;
       margin-top: 0px;
@@ -159,8 +247,299 @@ body {
       height: 70px;
       margin-bottom: 80px; }
     body footer #textoFooter {
-      color: #ffffff; }
+      color: rgba(183, 183, 183, 0.81);
+      padding-bottom: 30px; }
+      body footer #textoFooter ul li {
+        list-style: none;
+        margin-left: -40px;
+        margin-top: 10px; }
+        body footer #textoFooter ul li a {
+          color: #67b6f4; }
+          body footer #textoFooter ul li a:hover {
+            color: #1e6ebe;
+            text-decoration: none; }
+        body footer #textoFooter ul li:hover #social {
+          background-color: #ffffff;
+          border-radius: 50px; }
+      body footer #textoFooter #footerLine {
+        border-top: 1px solid rgba(183, 183, 183, 0.81); }
 
+@media (min-width: 1216px) and (max-width: 1438px) {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  body {
+    font-family: Roboto; }
+    body .upSection #upBackground {
+      background-color: #1e6ebe; }
+      body .upSection #upBackground ul {
+        margin-left: -55px;
+        list-style: none;
+        display: -webkit-inline-box; }
+        body .upSection #upBackground ul li {
+          padding-right: 20px;
+          padding-top: 30px;
+          padding-bottom: 20px;
+          color: #ffffff; }
+          body .upSection #upBackground ul li a {
+            color: #ffffff; }
+            body .upSection #upBackground ul li a:hover {
+              text-decoration: none; }
+    body nav {
+      background-color: #f1f1f2;
+      border-color: #f1f1f2;
+      width: 100%;
+      z-index: 99; }
+      body nav .container-fluid {
+        height: auto; }
+      body nav img {
+        height: 50px;
+        margin-top: -5px; }
+      body nav ul {
+        list-style: none; }
+        body nav ul li a {
+          margin-top: 15px;
+          margin-bottom: 5px;
+          font-family: Oswald;
+          padding-right: 20px;
+          color: #000000; }
+          body nav ul li a:hover {
+            color: #67b6f4;
+            text-decoration: none; }
+    body .affix {
+      top: 0px;
+      opacity: 0.95; }
+    body .carousel {
+      margin-top: -20px; }
+      body .carousel #text_1 {
+        margin-top: -320px;
+        font-size: 50px; }
+        body .carousel #text_1 li {
+          list-style: none;
+          margin-left: 100px;
+          margin-left: -50px; }
+      body .carousel #text_2 {
+        margin-top: -460px;
+        font-size: 50px; }
+        body .carousel #text_2 li {
+          font-size: 50px;
+          list-style: none; }
+      body .carousel #text_3 {
+        margin-top: -380px;
+        font-size: 50px;
+        margin-left: 300px; }
+        body .carousel #text_3 li {
+          font-size: 50px;
+          list-style: none; }
+      body .carousel #text_5 {
+        margin-top: -380px;
+        font-size: 50px;
+        margin-left: 300px; }
+        body .carousel #text_5 li {
+          font-size: 50px;
+          list-style: none; }
+    body #btn .btn {
+      margin-top: 100px;
+      z-index: 999;
+      position: absolute; }
+    body .reelSection .modal-content {
+      width: 100%;
+      margin-left: 0px; }
+    body .trustSection #trustBackground #logos img {
+      width: 50%; } }
+@media (min-width: 1077px) and (max-width: 1215px) {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  body {
+    font-family: Roboto; }
+    body .upSection #upBackground {
+      background-color: #1e6ebe; }
+      body .upSection #upBackground ul {
+        margin-left: -55px;
+        list-style: none;
+        display: -webkit-inline-box; }
+        body .upSection #upBackground ul li {
+          padding-right: 20px;
+          padding-top: 30px;
+          padding-bottom: 20px;
+          color: #ffffff; }
+          body .upSection #upBackground ul li a {
+            color: #ffffff; }
+            body .upSection #upBackground ul li a:hover {
+              text-decoration: none; }
+    body nav {
+      background-color: #f1f1f2;
+      border-color: #f1f1f2;
+      width: 100%;
+      z-index: 99; }
+      body nav .container-fluid {
+        height: auto; }
+      body nav img {
+        height: 50px;
+        margin-top: -5px; }
+      body nav ul {
+        list-style: none; }
+        body nav ul li a {
+          margin-top: 15px;
+          margin-bottom: 5px;
+          font-family: Oswald;
+          padding-right: 20px;
+          color: #000000; }
+          body nav ul li a:hover {
+            color: #67b6f4;
+            text-decoration: none; }
+    body .affix {
+      top: 0px;
+      opacity: 0.95; }
+    body .carousel {
+      margin-top: -20px; }
+      body .carousel #text_1 {
+        margin-top: -280px;
+        font-size: 50px; }
+        body .carousel #text_1 li {
+          list-style: none;
+          margin-left: 100px;
+          margin-left: -50px; }
+      body .carousel #text_2 {
+        margin-top: -400px;
+        font-size: 50px; }
+        body .carousel #text_2 li {
+          font-size: 50px;
+          list-style: none; }
+      body .carousel #text_3 {
+        margin-top: -330px;
+        font-size: 50px;
+        margin-left: 300px; }
+        body .carousel #text_3 li {
+          font-size: 50px;
+          list-style: none; }
+      body .carousel #text_5 {
+        margin-top: -320px;
+        font-size: 50px;
+        margin-left: 300px; }
+        body .carousel #text_5 li {
+          font-size: 50px;
+          list-style: none; }
+    body .optionSection #optionBackground {
+      margin-top: 0px;
+      background-color: #1e6ebe; }
+      body .optionSection #optionBackground #negrillaText {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        color: #ffffff; }
+      body .optionSection #optionBackground p {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        float: left; }
+      body .optionSection #optionBackground #u1 {
+        margin-top: 10px; }
+      body .optionSection #optionBackground #u2 {
+        margin-top: 10px; }
+      body .optionSection #optionBackground #u3 {
+        margin-top: 10px; }
+      body .optionSection #optionBackground #u4 {
+        margin-top: 5px; }
+    body .reelSection .modal-content {
+      width: 100%;
+      margin-left: 0px; }
+    body .trustSection #trustBackground #logos img {
+      width: 50%; } }
+@media (min-width: 992px) and (max-width: 1076px) {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  body {
+    font-family: Roboto; }
+    body .upSection #upBackground {
+      background-color: #1e6ebe; }
+      body .upSection #upBackground ul {
+        margin-left: -55px;
+        list-style: none;
+        display: -webkit-inline-box; }
+        body .upSection #upBackground ul li {
+          padding-right: 20px;
+          padding-top: 30px;
+          padding-bottom: 20px;
+          color: #ffffff; }
+          body .upSection #upBackground ul li a {
+            color: #ffffff; }
+            body .upSection #upBackground ul li a:hover {
+              text-decoration: none; }
+    body nav {
+      background-color: #f1f1f2;
+      border-color: #f1f1f2;
+      width: 100%;
+      z-index: 99; }
+      body nav .container-fluid {
+        height: auto; }
+      body nav img {
+        height: 50px;
+        margin-top: -5px; }
+      body nav ul {
+        list-style: none; }
+        body nav ul li a {
+          margin-top: 15px;
+          margin-bottom: 5px;
+          font-family: Oswald;
+          padding-right: 20px;
+          color: #000000; }
+          body nav ul li a:hover {
+            color: #67b6f4;
+            text-decoration: none; }
+    body .affix {
+      top: 0px;
+      opacity: 0.95; }
+    body .carousel {
+      margin-top: -20px; }
+      body .carousel #text_1 {
+        margin-top: -240px;
+        font-size: 50px; }
+        body .carousel #text_1 li {
+          list-style: none;
+          margin-left: 100px;
+          margin-left: -50px; }
+      body .carousel #text_2 {
+        margin-top: -400px;
+        font-size: 50px; }
+        body .carousel #text_2 li {
+          font-size: 50px;
+          list-style: none; }
+      body .carousel #text_3 {
+        margin-top: -400px;
+        font-size: 50px;
+        margin-left: 300px; }
+        body .carousel #text_3 li {
+          font-size: 50px;
+          list-style: none; }
+      body .carousel #text_5 {
+        margin-top: -350px;
+        font-size: 50px;
+        margin-left: 300px; }
+        body .carousel #text_5 li {
+          font-size: 50px;
+          list-style: none; }
+    body .optionSection #optionBackground {
+      margin-top: 0px;
+      background-color: #1e6ebe; }
+      body .optionSection #optionBackground #negrillaText {
+        padding-top: 27px;
+        padding-bottom: 0px;
+        color: #ffffff; }
+      body .optionSection #optionBackground p {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        float: left; }
+      body .optionSection #optionBackground #u1 {
+        margin-top: 10px; }
+      body .optionSection #optionBackground #u2 {
+        margin-top: 10px; }
+      body .optionSection #optionBackground #u3 {
+        margin-top: 10px; }
+      body .optionSection #optionBackground #u4 {
+        margin-top: 5px; }
+    body .reelSection .modal-content {
+      width: 100%;
+      margin-left: 0px; }
+    body .trustSection #trustBackground #logos img {
+      width: 50%; } }
 @media (min-width: 769px) and (max-width: 991px) {
   html {
     overflow-y: scroll;
@@ -173,6 +552,76 @@ body {
       body .upSection #upBackground ul {
         float: right;
         margin-right: -20px; }
+    body nav {
+      background-color: #f1f1f2;
+      border-color: #f1f1f2;
+      width: 100%;
+      z-index: 99; }
+      body nav .container-fluid {
+        height: auto; }
+      body nav img {
+        height: 50px;
+        margin-top: -5px; }
+      body nav ul {
+        list-style: none; }
+        body nav ul li a {
+          margin-top: 15px;
+          margin-bottom: 5px;
+          font-family: Oswald;
+          padding-right: 20px;
+          color: #000000; }
+          body nav ul li a:hover {
+            color: #67b6f4;
+            text-decoration: none; }
+    body .affix {
+      top: 0px;
+      opacity: 0.95; }
+    body .carousel {
+      margin-top: -20px; }
+      body .carousel #text_1 {
+        margin-top: -180px; }
+        body .carousel #text_1 li {
+          font-size: 30px;
+          list-style: none;
+          margin-left: 100px;
+          margin-left: -50px; }
+      body .carousel #text_2 {
+        margin-top: -260px;
+        font-size: 30px; }
+        body .carousel #text_2 li {
+          font-size: 30px;
+          list-style: none; }
+      body .carousel #text_3 {
+        margin-top: -200px;
+        margin-left: 170px; }
+        body .carousel #text_3 li {
+          font-size: 30px;
+          list-style: none; }
+      body .carousel #text_5 {
+        margin-top: -200px;
+        margin-left: 120px; }
+        body .carousel #text_5 li {
+          font-size: 30px;
+          list-style: none; }
+    body .optionSection #optionBackground {
+      margin-top: 0px;
+      background-color: #1e6ebe; }
+      body .optionSection #optionBackground #negrillaText {
+        padding-top: 27px;
+        padding-bottom: 0px;
+        color: #ffffff; }
+      body .optionSection #optionBackground p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        float: left; }
+      body .optionSection #optionBackground #u1 {
+        margin-top: 10px; }
+      body .optionSection #optionBackground #u2 {
+        margin-top: 10px; }
+      body .optionSection #optionBackground #u3 {
+        margin-top: 10px; }
+      body .optionSection #optionBackground #u4 {
+        margin-top: -15px; }
     body .optionSection #optionBackground p {
       float: left; }
     body .optionSection #optionBackground #unidades1 {
@@ -185,6 +634,9 @@ body {
       margin-left: -100px; }
     body .reelSection #reelBackground iframe {
       height: 450px; }
+    body .reelSection .modal-content {
+      width: 100%;
+      margin-left: 0px; }
     body .principalSection #principalBackground {
       padding-top: 80px; }
       body .principalSection #principalBackground h3 {
@@ -192,8 +644,8 @@ body {
       body .principalSection #principalBackground #image {
         margin-top: -50px;
         margin-bottom: -50px; }
-    body .trustSection #trustBackground img {
-      padding: 20px; }
+    body .trustSection #trustBackground #logos img {
+      width: 50%; }
     body .contactUsSection #contactUsBackground {
       padding-bottom: 100px; }
       body .contactUsSection #contactUsBackground h2 {
@@ -218,6 +670,59 @@ body {
     body nav img {
       height: 40px;
       margin-top: -7px; }
+    body .affix {
+      top: 0px;
+      opacity: 0.95; }
+    body .carousel {
+      margin-top: -20px; }
+      body .carousel #text_1 {
+        margin-top: -150px; }
+        body .carousel #text_1 li {
+          font-size: 30px;
+          list-style: none;
+          margin-left: 100px;
+          margin-left: -50px; }
+      body .carousel #text_2 {
+        margin-top: -230px;
+        font-size: 30px; }
+        body .carousel #text_2 li {
+          font-size: 30px;
+          list-style: none; }
+      body .carousel #text_3 {
+        margin-top: -170px;
+        margin-left: 170px; }
+        body .carousel #text_3 li {
+          font-size: 30px;
+          list-style: none; }
+      body .carousel #text_5 {
+        margin-top: -170px;
+        margin-left: 120px; }
+        body .carousel #text_5 li {
+          font-size: 30px;
+          list-style: none; }
+    body .optionSection #optionBackground {
+      margin-top: 0px;
+      background-color: #1e6ebe; }
+      body .optionSection #optionBackground #negrillaText {
+        padding-top: 27px;
+        padding-bottom: 0px;
+        color: #ffffff; }
+      body .optionSection #optionBackground p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        float: left; }
+      body .optionSection #optionBackground #u1 {
+        width: 25%;
+        padding: 10px; }
+      body .optionSection #optionBackground #u2 {
+        width: 25%;
+        padding: 10px; }
+      body .optionSection #optionBackground #u3 {
+        width: 25%;
+        padding: 10px; }
+      body .optionSection #optionBackground #u4 {
+        width: 25%;
+        padding: 10px; }
     body .optionSection #optionBackground p {
       float: left; }
     body .optionSection #optionBackground #unidades1 {
@@ -229,6 +734,9 @@ body {
       margin-top: -50px; }
     body .reelSection #reelBackground iframe {
       height: 400px; }
+    body .reelSection .modal-content {
+      width: 100%;
+      margin-left: 0px; }
     body .principalSection #principalBackground {
       padding-top: 80px; }
       body .principalSection #principalBackground h3 {
@@ -266,6 +774,35 @@ body {
     body nav img {
       height: 40px;
       margin-top: -7px; }
+    body .affix {
+      top: 0px;
+      opacity: 0.95; }
+    body .carousel {
+      margin-top: -20px; }
+      body .carousel #text_1 {
+        margin-top: -70px; }
+        body .carousel #text_1 li {
+          font-size: 20px;
+          list-style: none;
+          margin-left: -40px; }
+      body .carousel #text_2 {
+        margin-top: -140px;
+        font-size: 20px; }
+        body .carousel #text_2 li {
+          font-size: 20px;
+          list-style: none; }
+      body .carousel #text_3 {
+        margin-top: -70px;
+        margin-left: 70px; }
+        body .carousel #text_3 li {
+          font-size: 20px;
+          list-style: none; }
+      body .carousel #text_5 {
+        margin-top: -90px;
+        margin-left: 70px; }
+        body .carousel #text_5 li {
+          font-size: 20px;
+          list-style: none; }
     body .optionSection #optionBackground p {
       float: left; }
     body .optionSection #optionBackground #unidades1 {
@@ -277,6 +814,9 @@ body {
       margin-top: -50px; }
     body .reelSection #reelBackground iframe {
       height: 300px; }
+    body .reelSection .modal-content {
+      width: 100%;
+      margin-left: 0px; }
     body .principalSection #principalBackground {
       padding-top: 80px; }
       body .principalSection #principalBackground h3 {
